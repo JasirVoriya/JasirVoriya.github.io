@@ -2,6 +2,10 @@
 title: Redis介绍与部分原理
 top: 1
 sticky: 2
+tags:
+  - Redis
+  - 数据库
+  - NoSQL
 ---
 # Redis数据结构
 

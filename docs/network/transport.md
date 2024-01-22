@@ -1,6 +1,9 @@
 ---
 title: 计算机网络：运输层
 sticky: 3
+tags:
+  - tcp/ip
+  - 计网
 ---
 # 运输层
 
