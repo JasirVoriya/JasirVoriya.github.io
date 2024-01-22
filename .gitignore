@@ -5,7 +5,6 @@ cache
 .DS_Store
 pnpm-lock.yaml
 yarn.lock
-package-lock.json
 .vscode
 .idea
 *.log
