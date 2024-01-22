@@ -22,7 +22,7 @@ export default defineConfig({
     logo: '/logo.png',
     editLink: {
       pattern:
-        'https://github.com/ATQQ/sugar-blog/tree/master/packages/blogpress/:path',
+        'https://github.com/JasirVoriya/JasirVoriya.github.io/tree/master/docs/:path',
       text: '去 GitHub 上编辑内容'
     },
     nav: [
