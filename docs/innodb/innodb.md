@@ -1,5 +1,7 @@
 ---
-title: innodb原理和性能调优
+title: innodb原理介绍与运维
+top: 1
+stikcy: 1
 ---
 # 简介
 - InnoDB通过使用多版本并发控制（MVCC）来获得更高的并发性，并实现了SQL标准的四种隔离级别。

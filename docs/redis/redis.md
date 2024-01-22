@@ -1,5 +1,7 @@
 ---
 title: Redis介绍与部分原理
+top: 1
+sticky: 2
 ---
 # Redis数据结构
 
