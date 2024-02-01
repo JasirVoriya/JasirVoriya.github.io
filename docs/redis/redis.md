@@ -1241,7 +1241,7 @@ binlog-do-db=数据库名称
 
 添加用于数据同步的账户，设置用户权限
 
-```mysql
+```sql
 # 创建新用户
 create user canal@'%' IDENTIFIED by'canal';
 # 给新用户授权
