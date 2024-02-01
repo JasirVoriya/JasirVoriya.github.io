@@ -6,6 +6,7 @@ tags:
   - Redis
   - 数据库
   - NoSQL
+  - C
 ---
 # Redis数据结构
 
