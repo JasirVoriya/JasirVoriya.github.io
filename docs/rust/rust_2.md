@@ -204,3 +204,149 @@ println!("a: {:?}", a);
 let a = [3; 5];//声明数组，数组的类型是 [i32; 5]，数组的值是 [3, 3, 3, 3, 3]
 println!("a: {:?}", a);
 ```
+
+## 函数
+
+Rust 代码中的函数和变量名使用 snake case 规范风格。在函数签名中，必须 声明每个参数的类型：
+
+```rust
+fn another_function(x: i32) //函数签名
+{
+    println!("The value of x is: {x}");
+}
+```
+
+具有返回值的函数，必须在箭头（->）后面声明返回值的类型，如果不写return，则返回值是最后一行的表达式，这和C++一样：
+
+```rust
+fn five() -> i32 {
+    5 //返回值是5
+}
+```
+
+Rust里面有一个 语句(Statements) 和 表达式(Expressions) 的概念（虽然其他语言也有，但是Rust更加严格）：
+
+* 表达式是有值的，而语句是没有值的。
+
+表达式后面可以加上分号，变成语句，但是语句不能变成表达式。
+
+```rust
+fn main() {
+    let x = 5;
+    let y = {
+        let x = 3;
+        x + 1 //这是一个表达式，有值
+    };
+    println!("The value of y is: {y}");
+}
+fn plus_one(x: i32) -> i32 {
+    x + 1; //这是一个语句，没有值，会报错
+}
+```
+
+## 控制流
+
+Rust 有三种控制流：if表达式、循环和match表达式（match将在后面结合枚举类一起讲）：
+
+### if表达式
+
+if表达式的条件必须是bool类型，不能是其他类型，Rust不会自动转换非bool类型到bool类型，这和C++不一样：
+
+```rust
+fn main() {
+    let number = 3;
+    if number < 5 { //条件必须是bool类型
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
+
+    if number { //这里会报错，因为number不是bool类型
+        println!("number is not zero");
+    }
+}
+```
+
+注意，这里说的是 if表达式，而不是 if语句，既然是表达式，那么就有返回值，我们可以将if表达式的返回值赋给一个变量：
+
+```rust
+fn main() {
+    let condition = true;
+    let number = if condition { 5 } else { 6 };//if表达式的返回值是5
+    println!("The value of number is: {number}");
+}
+```
+
+这也是和C++不一样的地方，C++的if语句是没有返回值的，Rust可以使用if表达式来代替三元运算符，但注意的是，if表达式的两个分支必顽保持一致的类型。
+
+### 循环
+
+Rust有三种循环：loop、while和for：
+
+#### loop
+
+loop是一个无限循环，可以使用break来退出循环，同时也是一个表达式，可以通过break返回一个值：
+
+```rust
+fn main() {
+    let mut counter = 0;
+    let result = loop {
+        counter += 1;
+        if counter == 10 {
+            break counter * 2; //退出循环，并返回counter * 2
+        }
+    };
+    println!("The result is: {result}");
+}
+```
+
+loop多用于不知道循环次数的情况，或者用于中间获取计算的结果。
+
+#### while
+
+while循环和C++一样，while不是表达式，不能通过break返回值：
+
+```rust
+fn while_test() {
+    /*
+    while关键字用于创建一个条件循环，可以使用break关键字来退出循环
+    */
+    println!("\nwhile_test");
+    let mut number = 10;
+    while number != 0 {
+        println!("{number}");
+        number -= 1;
+    }
+    println!("LIFTOFF!!!");
+}
+```
+
+#### for
+
+for循环和C++一样，for不是表达式，不能通过break返回值：
+
+```rust 
+fn for_test() {
+    /*
+    for关键字用于创建一个循环，可以使用break关键字来退出循环
+    */
+    println!("\nfor_test");
+    let a = [10, 20, 30, 40, 50];
+    for element in a.iter() {
+        println!("{element}");
+    }
+}
+```
+
+## 所有权
+
+Rust 通过所有权系统管理内存，所有权系统的核心概念是：
+
+* 每一个值都有一个被称为其 所有者（owner）的变量。
+
+* 一个值在任一时刻有且只有一个所有者。
+
+* 当所有者（变量）离开作用域，这个值将被丢弃。
+
+Rust中的变量绑定是一个值和一个变量名的关联，当变量离开作用域时，这个值将被丢弃。
+
