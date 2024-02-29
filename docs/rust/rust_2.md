@@ -524,3 +524,24 @@ fn takes_and_gives_back(mut str: String) -> String {
 变量的所有权总是遵循相同的模式：将值赋给另一个变量时移动它。当持有堆中数据值的变量离开作用域时，其值将通过 drop 被清理掉，除非数据被移动为另一个变量所有（或者说，变量已经没有所有者时，其值将通过 drop 被清理掉）。
 
 如果我们想对一个变量传入函数进行修改，但是在每一个函数中，都获取所有权，然后返回所有权，这样会非常麻烦，同时过多的数据移动会导致性能下降，所以Rust提供了引用来解决这个问题。
+
+## 引用和借用
+
+引用可以在传值的时候，允许你使用值但不获取其所有权：
+
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    let len = calculate_length(&s1); //传递s1的引用，&s1创建了一个指向s1的引用，但是不获取s1的所有权
+    println!("The length of '{s1}' is {len}");
+}
+fn calculate_length(s: &String) -> usize { //s是String的引用
+    s.len() //返回s的长度
+}//s离开作用域，但是因为它只是s1的引用，所以不会释放s1的堆内存
+```
+
+示意图，s指向了s1：
+
+![20240229180409](https://raw.githubusercontent.com/JasirVoriya/images-bed/master/image/20240229180409.png)
+
+我们将创建一个引用的行为称为 借用（borrowing）。
