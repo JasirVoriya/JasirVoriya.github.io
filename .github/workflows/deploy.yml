@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      - uses: pnpm/action-setup@v2 # 如果使用 pnpm，请取消注释
+      - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
         with:
           version: 8.14.1
       # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
@@ -50,7 +50,7 @@ jobs:
           pnpm build
           touch docs/.vitepress/dist/.nojekyll
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
 
