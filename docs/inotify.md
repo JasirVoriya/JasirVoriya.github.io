@@ -1,10 +1,11 @@
 ---
+title: Inotify介绍与使用
 tags: 
   - C++
   - Linux
   - inotify
 ---
-# Innotify介绍与使用
+# Inotify介绍与使用
 
 ## 简介
 

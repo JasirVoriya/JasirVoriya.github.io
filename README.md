@@ -2,10 +2,11 @@
 简约风的 [Vitepress 博客主题](https://theme.sugarat.top)
 
 ## Usage
-先安装 `pnpm`
+启用 `corepack`（推荐，避免全局安装包管理器）
 
 ```sh
-npm i -g pnpm
+corepack enable
+corepack prepare pnpm@8.14.1 --activate
 ```
 
 安装依赖

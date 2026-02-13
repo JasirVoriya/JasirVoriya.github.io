@@ -1,4 +1,5 @@
 ---
+title: Rust常见概念
 tags:
   - rust
 ---

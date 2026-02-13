@@ -1,4 +1,5 @@
 ---
+title: Rust入门
 tags:
   - rust
 ---

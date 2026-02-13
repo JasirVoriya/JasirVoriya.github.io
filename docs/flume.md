@@ -1,4 +1,5 @@
 ---
+title: Flume介绍
 tags:
  - flume
 ---
@@ -28,7 +29,7 @@ flume是一个分布式的，数据采集系统，可以从不同的数据源采
 
 #### Source
 
-数据的来源和方式，用来接收来自外部系统的`event`。针对不同的系统，会设计不同的`Source`，如`Avro Source`、`Thrift Source`，用来适配系统发过来的`event`。除了被动接收`event`之外，某些`Source`还会主动拉去`event`，如`Spooling Directory Source`。
+数据的来源和方式，用来接收来自外部系统的`event`。针对不同的系统，会设计不同的`Source`，如`Avro Source`、`Thrift Source`，用来适配系统发过来的`event`。除了被动接收`event`之外，某些`Source`还会主动拉取`event`，如`Spooling Directory Source`。
 
 #### Channel
 
@@ -43,4 +44,3 @@ flume是一个分布式的，数据采集系统，可以从不同的数据源采
 只有当`Sink`将`event`成功发送出去的时候，`event`才会从`Channel`中删除，这就保证了**端到端的可靠传输**，`Channel`的存在也实现了`event`的异步传输。
 
 `Flume`使用事务来保证`event`的**可靠传输**，`Source`和`Sink`对`Channel`提供的`event`都会封装成一个事务，用于存储和恢复，这样就保证了点到点之间的可靠传输。多层架构下，上一个`Sink`和下一个`Source`都会有事务运行，以保证`event`安全到达下一个`Channel`。
-

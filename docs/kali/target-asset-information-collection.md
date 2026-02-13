@@ -1,6 +1,7 @@
 ---
+title: 目标资产信息收集
 tags:
- - Kail
+ - Kali
  - 信息收集
 ---
 # 目标资产信息收集
@@ -37,7 +38,7 @@ Shodan是**互联网上最可怕的搜索引擎**，Shodan不是在网上搜索�
 * org：搜索指定的组织或公司。
 * isp：搜索指定的ISP供应商。
 * product：搜索指定的操作系统/软件/平台。
-* version：搜索滴定的软件版本。
+* version：搜索指定的软件版本。
 * geo：搜索指定的地理位置。
 * before/after：搜索指定收录时间前后的数据，格式为 dd-mm-yy。
 * net：搜索指定的IP地址或子网。
@@ -77,7 +78,7 @@ Google直接搜索自己想要的内容，也有特定的语法可以使用，�
 1. Layer子域名挖掘机
 2. 子域名挖掘工具：Maltego
 3. 搜索引擎挖掘：Google
-4. 证书透明公开日枚举：http://censys.io/
+4. 证书透明公开枚举：http://censys.io/
 5. 其他途径。
 
 ### FOFA搜索引擎使用方法
@@ -87,6 +88,5 @@ Google直接搜索自己想要的内容，也有特定的语法可以使用，�
 ![image-20240201191440103](https://raw.githubusercontent.com/JasirVoriya/images-bed/master/imageimage-20240201191440103.png)
 
 FOFA时白帽汇推出的一款网络空间搜索引擎，它通过进行网络空间测绘，能够帮助研究人员和企业迅速进行网络资产匹配，例如进行漏洞影响范围分析、应用分布统计、应用流行度排名等。
-
 
 

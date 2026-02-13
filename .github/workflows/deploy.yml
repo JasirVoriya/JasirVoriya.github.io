@@ -35,6 +35,7 @@ jobs:
       - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
         with:
           version: 8.14.1
+      # 仓库仅使用 pnpm-lock.yaml 作为唯一锁文件来源
       # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -44,7 +45,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
-        run: pnpm install # 或 pnpm install / yarn install / bun install
+        run: pnpm install --frozen-lockfile # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: |
           pnpm build
