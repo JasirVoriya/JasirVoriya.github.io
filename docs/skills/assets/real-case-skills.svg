@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="640" viewBox="0 0 1380 640">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f4ee" />
+      <stop offset="100%" stop-color="#efebe5" />
+    </linearGradient>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#252525" />
+    </marker>
+    <style>
+      .title { font: 700 34px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+      .subtitle { font: 400 18px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #4a4a4a; }
+      .card-title { font: 700 18px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+      .card-text { font: 400 16px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #333333; }
+      .tag { font: 700 13px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #71472c; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1380" height="640" rx="24" fill="url(#bg3)" />
+  <text x="68" y="72" class="title">一套方法，沉淀出四个 Skill</text>
+  <text x="68" y="106" class="subtitle">一个母 skill，加上三个站点或平台 skill，组成可复用的内部自动化能力。</text>
+
+  <g transform="translate(70,176)">
+    <rect x="0" y="0" width="300" height="288" rx="24" fill="#dbe7f4" />
+    <text x="24" y="40" class="tag">母方法</text>
+    <text x="24" y="88" class="card-title">website-capability-</text>
+    <text x="24" y="116" class="card-title">to-skill</text>
+    <text x="24" y="158" class="card-text">教 AI 学网站、抽接口、</text>
+    <text x="24" y="182" class="card-text">生成站点 skill，并接入</text>
+    <text x="24" y="206" class="card-text">鉴权缓存与恢复逻辑。</text>
+  </g>
+
+  <g transform="translate(470,110)">
+    <rect x="0" y="0" width="360" height="140" rx="24" fill="#f3dfcb" />
+    <text x="24" y="38" class="tag">案例 1</text>
+    <text x="24" y="76" class="card-title">skill-market-</text>
+    <text x="24" y="102" class="card-title">uploader</text>
+    <text x="24" y="124" class="card-text">学会 Skill 市场的上传、更新和鉴权恢复。</text>
+  </g>
+
+  <g transform="translate(470,270)">
+    <rect x="0" y="0" width="360" height="140" rx="24" fill="#d8ead9" />
+    <text x="24" y="38" class="tag">案例 2</text>
+    <text x="24" y="76" class="card-title">log-query-</text>
+    <text x="24" y="102" class="card-title">troubleshooter</text>
+    <text x="24" y="124" class="card-text">学会日志查询、分析、排障与纯 API 执行。</text>
+  </g>
+
+  <g transform="translate(470,430)">
+    <rect x="0" y="0" width="360" height="140" rx="24" fill="#e7dff1" />
+    <text x="24" y="38" class="tag">案例 3</text>
+    <text x="24" y="76" class="card-title">app-release-</text>
+    <text x="24" y="102" class="card-title">automation</text>
+    <text x="24" y="126" class="card-text">把发布平台的构建、发布和环境管理沉淀成 skill。</text>
+  </g>
+
+  <g transform="translate(930,176)">
+    <rect x="0" y="0" width="320" height="288" rx="24" fill="#efe1f2" />
+    <text x="24" y="40" class="tag">最终产物</text>
+    <text x="24" y="88" class="card-title">团队可复用流程</text>
+    <text x="24" y="136" class="card-text">学一次，多次执行。</text>
+    <text x="24" y="160" class="card-text">上传、日志排障、构建发布</text>
+    <text x="24" y="184" class="card-text">都能复用同一套编排模式。</text>
+  </g>
+
+  <line x1="370" y1="250" x2="458" y2="180" stroke="#252525" stroke-width="4" marker-end="url(#arrow3)" />
+  <line x1="370" y1="320" x2="458" y2="333" stroke="#252525" stroke-width="4" marker-end="url(#arrow3)" />
+  <line x1="370" y1="390" x2="458" y2="500" stroke="#252525" stroke-width="4" marker-end="url(#arrow3)" />
+
+  <line x1="830" y1="180" x2="918" y2="236" stroke="#252525" stroke-width="4" marker-end="url(#arrow3)" />
+  <line x1="830" y1="333" x2="918" y2="320" stroke="#252525" stroke-width="4" marker-end="url(#arrow3)" />
+  <line x1="830" y1="500" x2="918" y2="404" stroke="#252525" stroke-width="4" marker-end="url(#arrow3)" />
+</svg>

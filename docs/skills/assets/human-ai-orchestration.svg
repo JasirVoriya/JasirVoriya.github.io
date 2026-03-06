@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="760" viewBox="0 0 1360 760">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f3ea" />
+      <stop offset="100%" stop-color="#efe8dc" />
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2c2c2c" />
+    </marker>
+    <style>
+      .title { font: 700 36px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1d1d1d; }
+      .subtitle { font: 400 18px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #555555; }
+      .section { font: 700 26px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1d1d1d; }
+      .label { font: 700 14px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #7a4e2b; letter-spacing: 1px; }
+      .card-title { font: 700 18px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1d1d1d; }
+      .card-text { font: 400 16px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #333333; }
+      .center-title { font: 700 24px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1d1d1d; }
+      .center-text { font: 400 17px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #343434; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1360" height="760" rx="28" fill="url(#bg)" />
+  <text x="72" y="76" class="title">你和 AI 的分工不是谁去点网页</text>
+  <text x="72" y="108" class="subtitle">你负责编排、约束和验收。AI 负责学习能力、抽接口、写脚本和执行。</text>
+
+  <rect x="74" y="156" width="470" height="520" rx="28" fill="#f1dcc7" />
+  <text x="108" y="210" class="section">你负责什么</text>
+
+  <g transform="translate(108,250)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#fff9f2" />
+    <text x="24" y="32" class="label">动作 1</text>
+    <text x="24" y="58" class="card-title">定义终局</text>
+    <text x="142" y="58" class="card-text">这次到底要学什么能力，交付什么产物。</text>
+  </g>
+  <g transform="translate(108,352)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#fff9f2" />
+    <text x="24" y="32" class="label">动作 2</text>
+    <text x="24" y="58" class="card-title">立硬约束</text>
+    <text x="142" y="58" class="card-text">浏览器只学习，业务执行必须走 API。</text>
+  </g>
+  <g transform="translate(108,454)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#fff9f2" />
+    <text x="24" y="32" class="label">动作 3</text>
+    <text x="24" y="58" class="card-title">及时纠偏</text>
+    <text x="142" y="58" class="card-text">发现 AI 走网页操作，就把它拉回 API-first。</text>
+  </g>
+  <g transform="translate(108,556)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#fff9f2" />
+    <text x="24" y="32" class="label">动作 4</text>
+    <text x="24" y="58" class="card-title">验收结果</text>
+    <text x="142" y="58" class="card-text">用真实任务压 skill，直到可复用、可交付。</text>
+  </g>
+
+  <rect x="816" y="156" width="470" height="520" rx="28" fill="#dce8f4" />
+  <text x="850" y="210" class="section">AI 负责什么</text>
+
+  <g transform="translate(850,250)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#f9fcff" />
+    <text x="24" y="32" class="label">动作 1</text>
+    <text x="24" y="58" class="card-title">学习能力</text>
+    <text x="142" y="58" class="card-text">打开网站、分析页面、观察网络请求和上下文。</text>
+  </g>
+  <g transform="translate(850,352)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#f9fcff" />
+    <text x="24" y="32" class="label">动作 2</text>
+    <text x="24" y="58" class="card-title">抽接口</text>
+    <text x="142" y="58" class="card-text">整理 API、请求体、响应体和错误语义。</text>
+  </g>
+  <g transform="translate(850,454)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#f9fcff" />
+    <text x="24" y="32" class="label">动作 3</text>
+    <text x="24" y="58" class="card-title">沉淀实现</text>
+    <text x="142" y="58" class="card-text">写脚本、鉴权缓存、README 和能力映射。</text>
+  </g>
+  <g transform="translate(850,556)">
+    <rect x="0" y="0" width="402" height="86" rx="18" fill="#f9fcff" />
+    <text x="24" y="32" class="label">动作 4</text>
+    <text x="24" y="58" class="card-title">完成执行</text>
+    <text x="142" y="58" class="card-text">用 API 真正跑任务，必要时再恢复鉴权。</text>
+  </g>
+
+  <g transform="translate(565,244)">
+    <rect x="0" y="0" width="230" height="344" rx="28" fill="#ffffff" opacity="0.95" />
+    <text x="38" y="66" class="center-title">共同产物</text>
+    <text x="38" y="128" class="center-text">目标清晰</text>
+    <text x="38" y="168" class="center-text">边界清晰</text>
+    <text x="38" y="208" class="center-text">实现可跑</text>
+    <text x="38" y="248" class="center-text">鉴权可恢复</text>
+    <text x="38" y="288" class="center-text">skill 可分发</text>
+  </g>
+
+  <line x1="544" y1="414" x2="560" y2="414" stroke="#2c2c2c" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="796" y1="414" x2="812" y2="414" stroke="#2c2c2c" stroke-width="4" marker-end="url(#arrow)" />
+</svg>

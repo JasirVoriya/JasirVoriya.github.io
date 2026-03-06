@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f4ee" />
+      <stop offset="100%" stop-color="#ede8df" />
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2a2a2a" />
+    </marker>
+    <style>
+      .title { font: 700 36px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+      .subtitle { font: 400 18px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #4f4f4f; }
+      .card-title { font: 700 21px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+      .card-text { font: 400 16px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #333333; }
+      .tag { font: 700 13px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #75492c; letter-spacing: 1px; }
+      .center { font: 700 28px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1440" height="920" rx="28" fill="url(#bg)" />
+  <text x="72" y="76" class="title">五个 skill 不是五条散线，而是一套生产链</text>
+  <text x="72" y="110" class="subtitle">一个母 skill 负责“教 AI 学网站”，另外四个 skill 负责把不同场景产品化并交付出去。</text>
+
+  <g transform="translate(428,156)">
+    <rect x="0" y="0" width="584" height="122" rx="24" fill="#ffffff" opacity="0.94" />
+    <text x="34" y="48" class="center">最终闭环</text>
+    <text x="34" y="82" class="card-text">学网站 → 生成 skill → 上传市场 → 用 skill 再生产知识资产</text>
+    <text x="34" y="106" class="card-text">这不是五个孤立成果，而是一条可重复执行的内部生产线。</text>
+  </g>
+
+  <g transform="translate(510,342)">
+    <rect x="0" y="0" width="420" height="232" rx="28" fill="#dbe8f4" />
+    <text x="32" y="44" class="tag">母 skill</text>
+    <text x="32" y="98" class="card-title">website-capability-to-skill</text>
+    <text x="32" y="142" class="card-text">统一方法：学网站、抽 API、生成 skill、接入鉴权缓存。</text>
+    <text x="32" y="176" class="card-text">它不是某个案例，而是后面四个 skill 的方法源头。</text>
+    <text x="32" y="206" class="card-text">先把方法训出来，后面的网站和平台就都能沿用。</text>
+  </g>
+
+  <g transform="translate(86,252)">
+    <rect x="0" y="0" width="332" height="176" rx="24" fill="#f3dfcb" />
+    <text x="24" y="40" class="tag">交付工具</text>
+    <text x="24" y="82" class="card-title">skill-market-</text>
+    <text x="24" y="110" class="card-title">uploader</text>
+    <text x="24" y="120" class="card-text">把 skill 打包、上传、更新到公司市场。</text>
+    <text x="24" y="148" class="card-text">它负责把本地产物变成团队可安装能力。</text>
+  </g>
+
+  <g transform="translate(1022,252)">
+    <rect x="0" y="0" width="332" height="176" rx="24" fill="#e4ddf0" />
+    <text x="24" y="40" class="tag">平台能力</text>
+    <text x="24" y="82" class="card-title">app-release-</text>
+    <text x="24" y="110" class="card-title">automation</text>
+    <text x="24" y="120" class="card-text">把构建、发布、环境管理变成稳定命令。</text>
+    <text x="24" y="148" class="card-text">说明这套方法也适用于内部平台型能力。</text>
+  </g>
+
+  <g transform="translate(86,640)">
+    <rect x="0" y="0" width="332" height="176" rx="24" fill="#dbe8da" />
+    <text x="24" y="40" class="tag">业务能力</text>
+    <text x="24" y="82" class="card-title">log-query-</text>
+    <text x="24" y="110" class="card-title">troubleshooter</text>
+    <text x="24" y="142" class="card-text">把日志查询、分析和排障做成 API-first skill。</text>
+  </g>
+
+  <g transform="translate(1022,640)">
+    <rect x="0" y="0" width="332" height="176" rx="24" fill="#f0e3d3" />
+    <text x="24" y="40" class="tag">知识库能力</text>
+    <text x="24" y="86" class="card-title">wiki-publisher</text>
+    <text x="24" y="120" class="card-text">把文档发布、附件上传和正文落盘做成 skill。</text>
+    <text x="24" y="148" class="card-text">说明 skill 还能反过来生产和发布知识资产。</text>
+  </g>
+
+  <line x1="510" y1="420" x2="430" y2="340" stroke="#2a2a2a" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="930" y1="420" x2="1010" y2="340" stroke="#2a2a2a" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="510" y1="496" x2="430" y2="728" stroke="#2a2a2a" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="930" y1="496" x2="1010" y2="728" stroke="#2a2a2a" stroke-width="4" marker-end="url(#arrow)" />
+
+  <line x1="720" y1="342" x2="720" y2="292" stroke="#2a2a2a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)" />
+  <line x1="418" y1="320" x2="480" y2="236" stroke="#2a2a2a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)" />
+  <line x1="1022" y1="320" x2="960" y2="236" stroke="#2a2a2a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)" />
+  <line x1="418" y1="728" x2="486" y2="278" stroke="#2a2a2a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)" />
+  <line x1="1022" y1="728" x2="954" y2="278" stroke="#2a2a2a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)" />
+</svg>

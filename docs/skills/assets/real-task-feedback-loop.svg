@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f3ea" />
+      <stop offset="100%" stop-color="#eeeadf" />
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b2b2b" />
+    </marker>
+    <style>
+      .title { font: 700 34px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+      .subtitle { font: 400 18px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #505050; }
+      .card-title { font: 700 22px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1f1f1f; }
+      .card-text { font: 400 16px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #333333; }
+      .tag { font: 700 13px "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #73492d; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1280" height="640" rx="28" fill="url(#bg)" />
+  <text x="68" y="76" class="title">真实任务怎么把一个 skill 逼成熟</text>
+  <text x="68" y="108" class="subtitle">日志平台的重构就是这么发生的：不是靠讨论，而是靠真实任务暴露旧实现，再逼 AI 回到 API-first。</text>
+
+  <g transform="translate(78,224)">
+    <rect x="0" y="0" width="190" height="168" rx="24" fill="#f1dcc7" />
+    <text x="24" y="42" class="tag">第 1 步</text>
+    <text x="24" y="90" class="card-title">下真实任务</text>
+    <text x="24" y="122" class="card-text">直接让 AI 分析真实</text>
+    <text x="24" y="146" class="card-text">app 的日志有没有异常。</text>
+  </g>
+
+  <g transform="translate(320,224)">
+    <rect x="0" y="0" width="190" height="168" rx="24" fill="#dbe8f4" />
+    <text x="24" y="42" class="tag">第 2 步</text>
+    <text x="24" y="90" class="card-title">暴露旧问题</text>
+    <text x="24" y="122" class="card-text">AI 沿用旧版逻辑，</text>
+    <text x="24" y="146" class="card-text">还是走浏览器查日志。</text>
+  </g>
+
+  <g transform="translate(562,224)">
+    <rect x="0" y="0" width="190" height="168" rx="24" fill="#f5dddd" />
+    <text x="24" y="42" class="tag">第 3 步</text>
+    <text x="24" y="90" class="card-title">人来纠偏</text>
+    <text x="24" y="122" class="card-text">明确指出：不对，</text>
+    <text x="24" y="146" class="card-text">必须改成接口查询。</text>
+  </g>
+
+  <g transform="translate(804,224)">
+    <rect x="0" y="0" width="190" height="168" rx="24" fill="#dbe8da" />
+    <text x="24" y="42" class="tag">第 4 步</text>
+    <text x="24" y="90" class="card-title">AI 重构 skill</text>
+    <text x="24" y="122" class="card-text">把查询逻辑、鉴权、</text>
+    <text x="24" y="146" class="card-text">重试和分析都改掉。</text>
+  </g>
+
+  <g transform="translate(1046,224)">
+    <rect x="0" y="0" width="170" height="168" rx="24" fill="#e6deef" />
+    <text x="22" y="42" class="tag">第 5 步</text>
+    <text x="22" y="90" class="card-title">重新验收</text>
+    <text x="22" y="122" class="card-text">再用真实任务跑，</text>
+    <text x="22" y="146" class="card-text">直到结论可信。</text>
+  </g>
+
+  <line x1="268" y1="308" x2="310" y2="308" stroke="#2b2b2b" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="510" y1="308" x2="552" y2="308" stroke="#2b2b2b" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="752" y1="308" x2="794" y2="308" stroke="#2b2b2b" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="994" y1="308" x2="1036" y2="308" stroke="#2b2b2b" stroke-width="4" marker-end="url(#arrow)" />
+
+  <path d="M 1128 404 C 1098 514 304 514 174 404" fill="none" stroke="#2b2b2b" stroke-width="4" stroke-dasharray="12 8" marker-end="url(#arrow)" />
+
+  <g transform="translate(356,482)">
+    <rect x="0" y="0" width="584" height="84" rx="22" fill="#ffffff" opacity="0.94" />
+    <text x="26" y="34" class="card-title">关键方法</text>
+    <text x="26" y="60" class="card-text">不是追求第一版就完美，而是用真实任务不断把临时实现逼成真正的 skill。</text>
+  </g>
+</svg>
