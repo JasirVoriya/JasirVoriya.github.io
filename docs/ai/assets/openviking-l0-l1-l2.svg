@@ -1,0 +1,38 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#F4F1E8"/>
+  <text x="72" y="86" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">L0 / L1 / L2：OpenViking 的分层上下文读取方式</text>
+  <text x="72" y="122" fill="#5A6C7D" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">重点不是“把所有内容一次塞给模型”，而是让 Agent 先看摘要，再决定要不要往下读。</text>
+
+  <rect x="116" y="206" width="968" height="116" rx="28" fill="#17324D"/>
+  <text x="164" y="252" fill="#F7FAFD" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">L0</text>
+  <text x="236" y="252" fill="#F7FAFD" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">一句话摘要</text>
+  <text x="236" y="292" fill="#D6E1EC" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">先判断相关不相关，适合做快速筛选和目录浏览。</text>
+
+  <rect x="166" y="360" width="868" height="138" rx="28" fill="#FFF1DE" stroke="#E4C9A8" stroke-width="2"/>
+  <text x="214" y="414" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">L1</text>
+  <text x="286" y="414" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">概览与结构层</text>
+  <text x="286" y="454" fill="#566777" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">帮助 Agent 做计划、决定要读哪个目录、哪个模块、哪份文档。</text>
+
+  <rect x="224" y="536" width="752" height="156" rx="28" fill="#E3ECDD" stroke="#C9D6C1" stroke-width="2"/>
+  <text x="272" y="594" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">L2</text>
+  <text x="344" y="594" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">完整细节</text>
+  <text x="344" y="634" fill="#566777" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">只有在确实需要代码、细节说明、完整经验时才往下读取。</text>
+
+  <path d="M600 322V358" stroke="#C98F45" stroke-width="5" stroke-linecap="round"/>
+  <path d="M600 498V534" stroke="#8DA66A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M600 348L590 332H610L600 348Z" fill="#C98F45"/>
+  <path d="M600 524L590 508H610L600 524Z" fill="#8DA66A"/>
+
+  <rect x="860" y="180" width="248" height="108" rx="22" fill="#FFFDF9" stroke="#E3D9CB" stroke-width="2"/>
+  <text x="892" y="224" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Agent 读取顺序</text>
+  <text x="892" y="258" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">先扫 L0</text>
+  <text x="980" y="258" fill="#C98F45" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">→</text>
+  <text x="1002" y="258" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">看 L1</text>
+  <text x="892" y="284" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">只有必要时</text>
+  <text x="994" y="284" fill="#8DA66A" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">→</text>
+  <text x="1016" y="284" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">读 L2</text>
+
+  <rect x="72" y="676" width="1056" height="48" rx="16" fill="#FFF8EF"/>
+  <text x="108" y="708" fill="#17324D" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">效果：</text>
+  <text x="168" y="708" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">降低 token 消耗，减少检索噪声，也让大仓库和长文档更适合被 coding agent 消费。</text>
+</svg>

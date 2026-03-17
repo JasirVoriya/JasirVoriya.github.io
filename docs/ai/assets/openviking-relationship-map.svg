@@ -1,0 +1,48 @@
+<svg width="1280" height="780" viewBox="0 0 1280 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="780" rx="28" fill="#F5F2EA"/>
+  <text x="72" y="88" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">OpenViking 和 RAG、MCP、Memory 的关系</text>
+  <text x="72" y="124" fill="#5A6C7D" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它不是在替代这些概念，而是在 Agent 架构里承担一个更偏“上下文治理层”的角色。</text>
+
+  <rect x="88" y="198" width="238" height="178" rx="24" fill="#17324D"/>
+  <text x="124" y="252" fill="#F7FAFD" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">模型</text>
+  <text x="124" y="304" fill="#D6E1EC" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">负责推理、生成、规划，</text>
+  <text x="124" y="336" fill="#D6E1EC" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">但不负责长期上下文存储。</text>
+
+  <rect x="364" y="198" width="238" height="178" rx="24" fill="#FFF1DE" stroke="#E3C8A7" stroke-width="2"/>
+  <text x="400" y="252" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">MCP</text>
+  <text x="400" y="304" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">负责把外部工具和数据</text>
+  <text x="400" y="336" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">接进模型可调用的接口层。</text>
+
+  <rect x="640" y="170" width="302" height="234" rx="28" fill="#17324D"/>
+  <text x="690" y="236" fill="#F7FAFD" font-size="32" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">OpenViking</text>
+  <text x="690" y="284" fill="#D6E1EC" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">上下文数据库</text>
+  <rect x="686" y="316" width="210" height="52" rx="16" fill="#274665"/>
+  <text x="720" y="350" fill="#F7FAFD" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">组织 + 检索 + 沉淀</text>
+
+  <rect x="980" y="198" width="220" height="178" rx="24" fill="#E6EDD7" stroke="#CFD8C6" stroke-width="2"/>
+  <text x="1014" y="252" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">RAG / 向量库</text>
+  <text x="1014" y="304" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">可以作为检索能力的一部分，</text>
+  <text x="1014" y="336" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">但不等于完整上下文系统。</text>
+
+  <path d="M326 286H354" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M602 286H630" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M942 286H970" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M354 286L338 276V296L354 286Z" fill="#17324D"/>
+  <path d="M630 286L614 276V296L630 286Z" fill="#17324D"/>
+  <path d="M970 286L954 276V296L970 286Z" fill="#17324D"/>
+
+  <rect x="174" y="474" width="932" height="220" rx="28" fill="#FFFDFC" stroke="#E3D8CA" stroke-width="2"/>
+  <text x="214" y="534" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">更准确的分工</text>
+
+  <rect x="214" y="572" width="252" height="82" rx="18" fill="#F3D9C7"/>
+  <text x="248" y="620" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">模型</text>
+  <text x="332" y="620" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">思考与生成</text>
+
+  <rect x="514" y="572" width="252" height="82" rx="18" fill="#E6EDD7"/>
+  <text x="548" y="620" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">MCP / Tools</text>
+  <text x="684" y="620" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">接外部能力</text>
+
+  <rect x="814" y="572" width="252" height="82" rx="18" fill="#DCE7F5"/>
+  <text x="848" y="620" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">OpenViking</text>
+  <text x="980" y="620" fill="#556676" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">管上下文</text>
+</svg>

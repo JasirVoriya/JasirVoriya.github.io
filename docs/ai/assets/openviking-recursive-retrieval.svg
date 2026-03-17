@@ -1,0 +1,51 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#F5F1E8"/>
+  <text x="72" y="88" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">目录递归检索：先找到正确位置，再读正确内容</text>
+  <text x="72" y="124" fill="#5A6C7D" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">这更像人在资料库里查资料，而不是在全世界的所有句子里直接做最终匹配。</text>
+
+  <rect x="72" y="208" width="204" height="340" rx="26" fill="#17324D"/>
+  <text x="104" y="258" fill="#F7FAFD" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">1. 用户问题</text>
+  <rect x="104" y="300" width="140" height="166" rx="18" fill="#274665"/>
+  <text x="128" y="350" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">“帮我找</text>
+  <text x="128" y="382" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">和 Kafka</text>
+  <text x="128" y="414" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">延迟操作</text>
+  <text x="128" y="446" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">相关的</text>
+  <text x="128" y="478" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">上下文”</text>
+
+  <rect x="338" y="178" width="252" height="396" rx="26" fill="#FFF9F0" stroke="#E1D7C8" stroke-width="2"/>
+  <text x="374" y="232" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">2. 先定位高分目录</text>
+  <rect x="372" y="270" width="184" height="72" rx="18" fill="#FFF1DE"/>
+  <text x="400" y="314" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">resources/</text>
+  <rect x="372" y="362" width="184" height="72" rx="18" fill="#E8F0D9"/>
+  <text x="418" y="406" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">automq/</text>
+  <rect x="372" y="454" width="184" height="72" rx="18" fill="#E4ECFA"/>
+  <text x="404" y="498" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">delayed-op/</text>
+
+  <rect x="654" y="178" width="270" height="396" rx="26" fill="#FFF9F0" stroke="#E1D7C8" stroke-width="2"/>
+  <text x="694" y="232" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">3. 递归往下钻</text>
+  <rect x="692" y="280" width="194" height="74" rx="18" fill="#F3D9C7"/>
+  <text x="722" y="325" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">看 L0 摘要</text>
+  <rect x="692" y="374" width="194" height="74" rx="18" fill="#E6EDD7"/>
+  <text x="722" y="419" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">看 L1 概览</text>
+  <rect x="692" y="468" width="194" height="74" rx="18" fill="#DCE7F5"/>
+  <text x="710" y="513" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">必要时读 L2</text>
+
+  <rect x="988" y="178" width="220" height="396" rx="26" fill="#17324D"/>
+  <text x="1024" y="232" fill="#F7FAFD" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">4. 返回结果</text>
+  <text x="1024" y="294" fill="#D6E1EC" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">拿到目标文档</text>
+  <text x="1024" y="330" fill="#D6E1EC" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">并保留检索轨迹</text>
+  <rect x="1020" y="384" width="156" height="118" rx="18" fill="#274665"/>
+  <text x="1048" y="430" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">为什么命中</text>
+  <text x="1048" y="462" fill="#F7FAFD" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">命中的路径</text>
+
+  <path d="M276 378H332" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M332 378L316 368V388L332 378Z" fill="#17324D"/>
+  <path d="M590 378H648" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M648 378L632 368V388L648 378Z" fill="#17324D"/>
+  <path d="M924 378H982" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M982 378L966 368V388L982 378Z" fill="#17324D"/>
+
+  <rect x="72" y="636" width="1136" height="72" rx="18" fill="#FFF8EF" stroke="#E3D7C7" stroke-width="2"/>
+  <text x="108" y="682" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">和传统扁平召回的差别：</text>
+  <text x="352" y="682" fill="#556676" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它先找对目录和层级，再做内容命中，因此更容易解释“为什么是这份上下文”。</text>
+</svg>
