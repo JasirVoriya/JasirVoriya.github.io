@@ -1,0 +1,54 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="32" fill="#F7F5EF"/>
+  <rect x="36" y="36" width="1128" height="688" rx="28" fill="#FFFDFC" stroke="#E8E0CF" stroke-width="2"/>
+  <text x="72" y="98" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Prompt Engineer 学习地图</text>
+  <text x="72" y="132" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">把一句模糊需求，变成稳定、可复用、可评测的 AI 工作流</text>
+
+  <rect x="72" y="184" width="180" height="124" rx="22" fill="#17324D"/>
+  <text x="102" y="228" fill="#F7F5EF" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">任务目标</text>
+  <text x="102" y="260" fill="#D6E0EA" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">用户到底要什么</text>
+  <text x="102" y="284" fill="#D6E0EA" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">成功标准是什么</text>
+
+  <rect x="312" y="184" width="180" height="124" rx="22" fill="#F8D57E"/>
+  <text x="342" y="228" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">指令设计</text>
+  <text x="342" y="260" fill="#4D5E70" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">角色、约束、格式</text>
+  <text x="342" y="284" fill="#4D5E70" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">不要让模型猜</text>
+
+  <rect x="552" y="184" width="180" height="124" rx="22" fill="#E8F0D4"/>
+  <text x="582" y="228" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">上下文</text>
+  <text x="582" y="260" fill="#4D5E70" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">知识、文档、数据</text>
+  <text x="582" y="284" fill="#4D5E70" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">必要而不是越多越好</text>
+
+  <rect x="792" y="184" width="180" height="124" rx="22" fill="#E9E3FB"/>
+  <text x="822" y="228" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">示例</text>
+  <text x="822" y="260" fill="#4D5E70" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">few-shot 不是装饰</text>
+  <text x="822" y="284" fill="#4D5E70" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">而是在教边界</text>
+
+  <path d="M252 246H312" stroke="#C29D3A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M492 246H552" stroke="#A4B88A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M732 246H792" stroke="#9D8BC2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M290 246L278 238V254L290 246Z" fill="#C29D3A"/>
+  <path d="M530 246L518 238V254L530 246Z" fill="#A4B88A"/>
+  <path d="M770 246L758 238V254L770 246Z" fill="#9D8BC2"/>
+
+  <rect x="92" y="390" width="1016" height="126" rx="26" fill="#FFFFFF" stroke="#E8E0CF" stroke-width="2"/>
+  <text x="126" y="438" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">输出不是终点，评测才是闭环</text>
+  <text x="126" y="474" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高质量 Prompt Engineer 的区别，不在于写过多少“神 prompt”，而在于能否持续比较版本、发现失败样本、优化结果。</text>
+
+  <rect x="116" y="562" width="232" height="112" rx="22" fill="#FFF3D4" stroke="#F1D48A" stroke-width="2"/>
+  <text x="144" y="606" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">输出结果</text>
+  <text x="144" y="638" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">摘要、分类、JSON、代码</text>
+
+  <rect x="484" y="562" width="232" height="112" rx="22" fill="#DFF0E7" stroke="#B8DDC8" stroke-width="2"/>
+  <text x="512" y="606" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">评测样本</text>
+  <text x="512" y="638" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">正常、边界、失败案例</text>
+
+  <rect x="852" y="562" width="232" height="112" rx="22" fill="#E5ECFA" stroke="#C6D5F3" stroke-width="2"/>
+  <text x="880" y="606" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">版本迭代</text>
+  <text x="880" y="638" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">观察变化，再决定升级</text>
+
+  <path d="M348 618H484" stroke="#D6B862" stroke-width="4" stroke-linecap="round"/>
+  <path d="M716 618H852" stroke="#88B7A1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M416 618L404 610V626L416 618Z" fill="#D6B862"/>
+  <path d="M784 618L772 610V626L784 618Z" fill="#88B7A1"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#F4F7FB"/>
+  <text x="72" y="92" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Message roles 不是形式，而是优先级设计</text>
+  <text x="72" y="126" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">OpenAI 官方文档把 developer / user / assistant 讲得很清楚：它们像“函数定义、参数、返回值”。</text>
+
+  <rect x="98" y="188" width="1004" height="400" rx="28" fill="#FFFFFF" stroke="#DCE5F0" stroke-width="2"/>
+
+  <rect x="148" y="234" width="904" height="108" rx="24" fill="#17324D"/>
+  <text x="184" y="280" fill="#F5F7FA" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">developer</text>
+  <text x="184" y="316" fill="#D9E4EE" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">系统规则、业务逻辑、输出约束、工具使用方式</text>
+
+  <rect x="148" y="360" width="904" height="108" rx="24" fill="#F8D57E"/>
+  <text x="184" y="406" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">user</text>
+  <text x="184" y="442" fill="#4D5E70" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">本次输入、需求变化、具体数据、上下文参数</text>
+
+  <rect x="148" y="486" width="904" height="68" rx="24" fill="#E8F0D4"/>
+  <text x="184" y="530" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">assistant</text>
+  <text x="334" y="530" fill="#4D5E70" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">模型输出的结果</text>
+
+  <path d="M1078 274H1122" stroke="#17324D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1078 410H1122" stroke="#D7B24F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1078 520H1122" stroke="#8BB38C" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="882" y="76" width="220" height="72" rx="20" fill="#FFF4D7" stroke="#F1D48A" stroke-width="2"/>
+  <text x="912" y="108" fill="#17324D" font-size="16" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">优先级理解</text>
+  <text x="912" y="132" fill="#536273" font-size="14" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">developer &gt; user &gt; assistant</text>
+
+  <rect x="98" y="622" width="1004" height="54" rx="18" fill="#EEF3F8"/>
+  <text x="126" y="656" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">最实用的改法：把“长期不变的规则”放 developer，把“每次变化的输入”放 user，不要全糊成一段话。</text>
+</svg>

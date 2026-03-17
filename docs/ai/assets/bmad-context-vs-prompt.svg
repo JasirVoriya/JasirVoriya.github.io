@@ -1,0 +1,41 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="32" fill="#F7F7F2"/>
+  <text x="72" y="92" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">BMAD 不是取消 Prompt，而是把 Prompt 升级成“上下文系统”</text>
+  <text x="72" y="126" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">一次性长提示词，变成可复用的角色、流程、文档和项目规则。</text>
+
+  <rect x="92" y="188" width="446" height="492" rx="30" fill="#FFFFFF" stroke="#E5DDD0" stroke-width="2"/>
+  <text x="132" y="246" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">传统 Prompt 驱动</text>
+  <text x="132" y="284" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">你每次都要重新解释任务、规则、风格、边界</text>
+
+  <rect x="132" y="328" width="366" height="86" rx="18" fill="#FFF3D4"/>
+  <text x="160" y="378" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">一条长 Prompt</text>
+
+  <rect x="132" y="438" width="366" height="86" rx="18" fill="#FCE4DB"/>
+  <text x="160" y="488" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">靠会话记忆保持一致</text>
+
+  <rect x="132" y="548" width="366" height="86" rx="18" fill="#E9E3FB"/>
+  <text x="160" y="598" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">换会话就要重新解释</text>
+
+  <rect x="662" y="188" width="446" height="492" rx="30" fill="#FFFFFF" stroke="#D8E4DB" stroke-width="2"/>
+  <text x="702" y="246" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">BMAD 上下文驱动</text>
+  <text x="702" y="284" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">规则被拆进 agent、workflow、文档产物和 project-context</text>
+
+  <rect x="702" y="318" width="366" height="74" rx="18" fill="#17324D"/>
+  <text x="732" y="364" fill="#F7F5EF" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Agent persona / menus</text>
+
+  <rect x="702" y="408" width="366" height="74" rx="18" fill="#BFE3D0"/>
+  <text x="732" y="454" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Workflow outputs</text>
+
+  <rect x="702" y="498" width="366" height="74" rx="18" fill="#E5ECFA"/>
+  <text x="732" y="544" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">PRD / Architecture / Story</text>
+
+  <rect x="702" y="588" width="366" height="74" rx="18" fill="#FFF3D4"/>
+  <text x="732" y="634" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">project-context.md</text>
+
+  <path d="M538 434H662" stroke="#C9A54F" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+  <path d="M600 434L588 426V442L600 434Z" fill="#C9A54F"/>
+
+  <text x="500" y="404" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">迁移</text>
+  <text x="470" y="462" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">一次性提示词</text>
+  <text x="468" y="486" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">→ 可复用上下文</text>
+</svg>

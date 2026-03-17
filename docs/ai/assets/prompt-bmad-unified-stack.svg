@@ -1,0 +1,40 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="32" fill="#F5F5F0"/>
+  <text x="72" y="92" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Prompt Engineering 和 BMAD 融合后的统一方法栈</text>
+  <text x="72" y="126" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">从一次任务的清晰表达，逐步上升到项目级上下文、产物和工作流。</text>
+
+  <rect x="112" y="186" width="976" height="92" rx="24" fill="#17324D"/>
+  <text x="152" y="242" fill="#F5F7FA" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第 1 层：任务契约</text>
+  <text x="392" y="242" fill="#D5E2EE" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">目标、边界、成功标准、输出结构</text>
+
+  <rect x="152" y="314" width="896" height="86" rx="22" fill="#FFF3D4"/>
+  <text x="186" y="366" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第 2 层：Prompt 结构</text>
+  <text x="420" y="366" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">developer / user、few-shot、schema、异常处理</text>
+
+  <rect x="192" y="436" width="816" height="86" rx="22" fill="#E8F0D4"/>
+  <text x="226" y="488" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第 3 层：上下文沉淀</text>
+  <text x="460" y="488" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">project-context、架构约束、项目规则、长期偏好</text>
+
+  <rect x="232" y="558" width="736" height="86" rx="22" fill="#E5ECFA"/>
+  <text x="266" y="610" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第 4 层：产物接力</text>
+  <text x="500" y="610" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">PRD、Architecture、Story、Task、Review 记录</text>
+
+  <rect x="272" y="680" width="656" height="86" rx="22" fill="#E9E3FB"/>
+  <text x="306" y="732" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第 5 层：Workflow 与验证</text>
+  <text x="540" y="732" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">多 agent 分工、testing、elicitation、回滚与迭代</text>
+
+  <path d="M600 278V314" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M600 400V436" stroke="#A0B789" stroke-width="4" stroke-linecap="round"/>
+  <path d="M600 522V558" stroke="#8FB2D8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M600 644V680" stroke="#9A87C3" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M600 302L592 290H608L600 302Z" fill="#C7A24A"/>
+  <path d="M600 424L592 412H608L600 424Z" fill="#A0B789"/>
+  <path d="M600 546L592 534H608L600 546Z" fill="#8FB2D8"/>
+  <path d="M600 668L592 656H608L600 668Z" fill="#9A87C3"/>
+
+  <rect x="836" y="34" width="260" height="92" rx="18" fill="#FFFFFF" stroke="#E5DDD0" stroke-width="2"/>
+  <text x="864" y="72" fill="#17324D" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">核心判断</text>
+  <text x="864" y="100" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Prompt 没有消失，</text>
+  <text x="864" y="122" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它被放进了更高层的系统。</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#F6F4FB"/>
+  <text x="72" y="92" fill="#17324D" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">GPT 模型和 reasoning 模型，prompt 方式并不完全一样</text>
+  <text x="72" y="126" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">OpenAI 官方文档的核心提醒之一：不同模型家族，需要不同程度的约束。</text>
+
+  <rect x="92" y="186" width="468" height="444" rx="30" fill="#FFFFFF" stroke="#D8DEEF" stroke-width="2"/>
+  <text x="132" y="242" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">GPT models</text>
+  <text x="132" y="280" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">更像执行力很强的同事</text>
+
+  <rect x="132" y="320" width="388" height="74" rx="18" fill="#E5ECFA"/>
+  <text x="158" y="366" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">适合</text>
+  <text x="244" y="366" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">明确格式、明确步骤、明确数据</text>
+
+  <rect x="132" y="416" width="388" height="74" rx="18" fill="#FFF3D4"/>
+  <text x="158" y="462" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">写法</text>
+  <text x="244" y="462" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">给足逻辑、字段、约束和输出样式</text>
+
+  <rect x="132" y="512" width="388" height="74" rx="18" fill="#E8F0D4"/>
+  <text x="158" y="558" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">风险</text>
+  <text x="244" y="558" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">说得太抽象时，容易偏离你的预期</text>
+
+  <rect x="640" y="186" width="468" height="444" rx="30" fill="#FFFFFF" stroke="#D8DEEF" stroke-width="2"/>
+  <text x="680" y="242" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Reasoning models</text>
+  <text x="680" y="280" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">更像会自己拆解问题的资深同事</text>
+
+  <rect x="680" y="320" width="388" height="74" rx="18" fill="#E9E3FB"/>
+  <text x="706" y="366" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">适合</text>
+  <text x="792" y="366" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">复杂规划、模糊任务、多步决策</text>
+
+  <rect x="680" y="416" width="388" height="74" rx="18" fill="#FFF3D4"/>
+  <text x="706" y="462" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">写法</text>
+  <text x="792" y="462" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">先给目标和成功标准，再按需补约束</text>
+
+  <rect x="680" y="512" width="388" height="74" rx="18" fill="#E8F0D4"/>
+  <text x="706" y="558" fill="#17324D" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">风险</text>
+  <text x="792" y="558" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">示例和规则冲突时，反而会变差</text>
+</svg>
