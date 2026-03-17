@@ -1,7 +1,5 @@
 ---
 title: innodb原理介绍与运维
-top: 1
-sticky: 1
 tags:
   - InnoDB
   - 数据库
