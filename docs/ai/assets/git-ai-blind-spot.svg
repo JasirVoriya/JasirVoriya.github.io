@@ -1,0 +1,41 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F4F3EF"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">传统 Git 能看到“谁提交了代码”，但看不到“AI 是怎么参与的”</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Git AI 试图补上的，不是代码本身，而是代码背后的来历和上下文。</text>
+
+  <rect x="72" y="184" width="474" height="472" rx="28" fill="#FFFFFF" stroke="#E1DED6" stroke-width="2"/>
+  <text x="112" y="238" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">传统 Git 视角</text>
+  <text x="112" y="278" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它非常擅长回答提交级问题。</text>
+
+  <rect x="112" y="322" width="394" height="74" rx="18" fill="#FFF1E3"/>
+  <text x="142" y="367" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">谁提交了这行代码</text>
+
+  <rect x="112" y="414" width="394" height="74" rx="18" fill="#FFF8D9"/>
+  <text x="142" y="459" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">改动发生在哪次 commit</text>
+
+  <rect x="112" y="506" width="394" height="74" rx="18" fill="#E8F1FF"/>
+  <text x="142" y="551" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">这一行最后是谁改的</text>
+
+  <text x="112" y="624" fill="#AF5C32" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">盲区：</text>
+  <text x="176" y="624" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它看不到 agent、model、session 和 prompt。</text>
+
+  <rect x="654" y="184" width="474" height="472" rx="28" fill="#17324D"/>
+  <text x="694" y="238" fill="#F6F8FA" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Git AI 想补齐的视角</text>
+  <text x="694" y="278" fill="#D7E4EF" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">让 AI 代码在 Git 历史里带着来源一起留下来。</text>
+
+  <rect x="694" y="322" width="394" height="74" rx="18" fill="#294965"/>
+  <text x="724" y="367" fill="#F6F8FA" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">哪个 agent 写了这段代码</text>
+
+  <rect x="694" y="414" width="394" height="74" rx="18" fill="#355A76"/>
+  <text x="724" y="459" fill="#F6F8FA" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">使用的是哪个 model</text>
+
+  <rect x="694" y="506" width="394" height="74" rx="18" fill="#416B88"/>
+  <text x="724" y="551" fill="#F6F8FA" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">对应哪次会话和上下文</text>
+
+  <text x="694" y="624" fill="#FFF2CC" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">结果：</text>
+  <text x="758" y="624" fill="#D7E4EF" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">归因从“谁提交”升级到“代码是怎么来的”。</text>
+
+  <path d="M560 420H640" stroke="#C5A24A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M626 408L646 420L626 432" fill="#C5A24A"/>
+  <text x="546" y="392" fill="#8A6B1F" font-size="20" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">AI 编程时代的新需求</text>
+</svg>

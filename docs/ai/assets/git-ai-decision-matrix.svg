@@ -1,0 +1,38 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F3F5EF"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">你到底需不需要装 Git AI</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">关键不是“它酷不酷”，而是你有多重度地使用 agent，以及你有多强的治理需求。</text>
+
+  <line x1="600" y1="176" x2="600" y2="676" stroke="#B9C3CF" stroke-width="3"/>
+  <line x1="180" y1="426" x2="1020" y2="426" stroke="#B9C3CF" stroke-width="3"/>
+
+  <text x="470" y="730" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">AI 使用强度</text>
+  <text x="190" y="730" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">低</text>
+  <text x="986" y="730" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高</text>
+
+  <text x="70" y="466" transform="rotate(-90 70 466)" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">治理与审计需求</text>
+  <text x="86" y="644" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">低</text>
+  <text x="86" y="214" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高</text>
+
+  <rect x="196" y="196" width="372" height="202" rx="26" fill="#FFF7D8"/>
+  <text x="236" y="252" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">可关注，但不必急着装</text>
+  <text x="236" y="300" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">你偶尔用 AI，但项目还不重。</text>
+  <text x="236" y="334" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">更大的收益通常来自流程整理，</text>
+  <text x="236" y="368" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">而不是先上归因基础设施。</text>
+
+  <rect x="632" y="196" width="372" height="202" rx="26" fill="#EAF3DF"/>
+  <text x="672" y="252" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">推荐试用</text>
+  <text x="672" y="300" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">多 agent 混用已经开始发生，</text>
+  <text x="672" y="334" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">你会开始在回看历史时受益。</text>
+  <text x="672" y="368" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">个人重度用户也在这一象限。</text>
+
+  <rect x="196" y="454" width="372" height="202" rx="26" fill="#FFF0E2"/>
+  <text x="236" y="510" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">通常不推荐</text>
+  <text x="236" y="558" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">side project 或轻量个人仓库，</text>
+  <text x="236" y="592" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">治理收益通常覆盖不了接入成本。</text>
+
+  <rect x="632" y="454" width="372" height="202" rx="26" fill="#17324D"/>
+  <text x="672" y="510" fill="#F6F8FA" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">优先采用</text>
+  <text x="672" y="558" fill="#D7E4EF" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">团队平台、合规场景、工程治理</text>
+  <text x="672" y="592" fill="#D7E4EF" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">会最容易拿到结构化价值。</text>
+</svg>

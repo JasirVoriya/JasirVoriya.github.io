@@ -1,0 +1,25 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F7F4EE"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Git AI 的价值，不只是一层“谁写了代码”</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它真正有意思的地方，是把代码归因逐步推向意图链路和团队治理。</text>
+
+  <rect x="170" y="492" width="860" height="126" rx="28" fill="#17324D"/>
+  <text x="232" y="548" fill="#F6F8FA" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第三层：团队治理</text>
+  <text x="232" y="590" fill="#D7E4EF" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">比较 agent 接受率、分析 AI 代码存活率、把 provenance 纳入 review 和审计。</text>
+
+  <rect x="230" y="336" width="740" height="122" rx="26" fill="#FFF2CC"/>
+  <text x="286" y="390" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第二层：意图链路</text>
+  <text x="286" y="430" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">把 agent、model、session、prompt 背景重新挂回代码历史。</text>
+
+  <rect x="292" y="194" width="616" height="108" rx="24" fill="#E7F1FF"/>
+  <text x="346" y="242" fill="#17324D" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">第一层：行级归因</text>
+  <text x="346" y="278" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">先回答最基础的问题：这段代码最初是人写的，还是 agent 写的。</text>
+
+  <path d="M600 302V334" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M600 458V490" stroke="#8EAED8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M588 326L600 342L612 326" fill="#C7A24A"/>
+  <path d="M588 482L600 498L612 482" fill="#8EAED8"/>
+
+  <rect x="124" y="652" width="952" height="76" rx="20" fill="#FFFFFF" stroke="#E2D9CB" stroke-width="2"/>
+  <text x="158" y="700" fill="#17324D" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">这也是为什么 Git AI 不只是开发者玩具，而更像一层早期的工程基础设施。</text>
+</svg>

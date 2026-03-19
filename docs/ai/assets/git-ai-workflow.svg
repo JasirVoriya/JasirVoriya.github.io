@@ -1,0 +1,37 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F3F5EF"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Git AI 的核心工作流</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它不是事后猜代码像不像 AI 写的，而是在修改发生时显式记录来源。</text>
+
+  <rect x="68" y="220" width="238" height="172" rx="24" fill="#17324D"/>
+  <text x="118" y="278" fill="#F5F7FA" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">1. Before edit</text>
+  <text x="104" y="322" fill="#D5E2EE" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">agent 改代码前记录</text>
+  <text x="104" y="352" fill="#D5E2EE" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">human baseline</text>
+
+  <rect x="344" y="220" width="238" height="172" rx="24" fill="#FFF2CC"/>
+  <text x="392" y="278" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">2. After edit</text>
+  <text x="378" y="322" fill="#536273" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">记录新 diff 属于哪次</text>
+  <text x="378" y="352" fill="#536273" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">agent session</text>
+
+  <rect x="620" y="220" width="238" height="172" rx="24" fill="#E7F1FF"/>
+  <text x="664" y="278" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">3. Commit</text>
+  <text x="654" y="322" fill="#536273" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">压缩 checkpoint，生成</text>
+  <text x="654" y="352" fill="#536273" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Authorship Log + Git Notes</text>
+
+  <rect x="896" y="220" width="238" height="172" rx="24" fill="#EAF3DF"/>
+  <text x="936" y="278" fill="#17324D" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">4. Read back</text>
+  <text x="930" y="322" fill="#536273" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">`git-ai blame` 再把</text>
+  <text x="930" y="352" fill="#536273" font-size="19" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">归因信息叠加回来</text>
+
+  <path d="M306 306H344" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M582 306H620" stroke="#8EAED8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M858 306H896" stroke="#97B285" stroke-width="4" stroke-linecap="round"/>
+  <path d="M334 294L350 306L334 318" fill="#C7A24A"/>
+  <path d="M610 294L626 306L610 318" fill="#8EAED8"/>
+  <path d="M886 294L902 306L886 318" fill="#97B285"/>
+
+  <rect x="114" y="492" width="972" height="176" rx="26" fill="#FFFFFF" stroke="#DDE2D6" stroke-width="2"/>
+  <text x="154" y="546" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">为什么这条路线更可信</text>
+  <text x="154" y="590" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">它跟踪的是“修改来源”，不是“代码风格”。</text>
+  <text x="154" y="624" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">所以它更接近真实历史：哪些 AI 代码真的进入了仓库，哪些只是短暂生成又被删掉。</text>
+</svg>
