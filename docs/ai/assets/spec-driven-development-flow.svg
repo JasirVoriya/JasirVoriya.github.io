@@ -1,0 +1,38 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F3F5EF"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Spec-Driven Development 的主流程</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">先让理解收敛，再把执行速度交给 agent。</text>
+
+  <rect x="86" y="244" width="214" height="128" rx="24" fill="#17324D"/>
+  <text x="140" y="292" fill="#F5F7FA" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Specify</text>
+  <text x="118" y="332" fill="#D5E2EE" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">写清目标、范围、</text>
+  <text x="118" y="358" fill="#D5E2EE" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">约束与验收标准</text>
+
+  <rect x="348" y="244" width="214" height="128" rx="24" fill="#FFF2CC"/>
+  <text x="426" y="292" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Plan</text>
+  <text x="384" y="332" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">定义方案、关键</text>
+  <text x="384" y="358" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">技术决策和风险</text>
+
+  <rect x="610" y="244" width="214" height="128" rx="24" fill="#EAF3DF"/>
+  <text x="682" y="292" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Tasks</text>
+  <text x="646" y="332" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">拆成可执行、可</text>
+  <text x="646" y="358" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">验证的工作单元</text>
+
+  <rect x="872" y="244" width="242" height="128" rx="24" fill="#E6ECFA"/>
+  <text x="930" y="292" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Implement</text>
+  <text x="908" y="332" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">让 agent 在规格</text>
+  <text x="908" y="358" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">边界内展开代码</text>
+
+  <path d="M300 308H348" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M562 308H610" stroke="#97B285" stroke-width="4" stroke-linecap="round"/>
+  <path d="M824 308H872" stroke="#8EAED8" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M340 308L328 300V316L340 308Z" fill="#C7A24A"/>
+  <path d="M602 308L590 300V316L602 308Z" fill="#97B285"/>
+  <path d="M864 308L852 300V316L864 308Z" fill="#8EAED8"/>
+
+  <rect x="150" y="486" width="900" height="164" rx="24" fill="#FFFFFF" stroke="#DDE2D6" stroke-width="2"/>
+  <text x="190" y="534" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">关键变化</text>
+  <text x="190" y="576" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">代码不再是起点，规格才是起点。</text>
+  <text x="190" y="610" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">对人来说，这让沟通更稳定；对 agent 来说，这让执行更可靠。</text>
+</svg>

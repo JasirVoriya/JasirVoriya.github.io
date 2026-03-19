@@ -1,0 +1,34 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F4F2EC"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">例子：给博客加搜索</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">同一个需求，prompt 驱动和 spec 驱动的输入质量完全不同。</text>
+
+  <rect x="82" y="188" width="474" height="500" rx="24" fill="#FFF0E5" stroke="#E7D2C2" stroke-width="2"/>
+  <text x="116" y="236" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Vibe prompt</text>
+  <text x="116" y="284" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">“帮我给博客加全文搜索，</text>
+  <text x="116" y="316" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">支持中文，界面别太丑。”</text>
+
+  <rect x="116" y="364" width="406" height="262" rx="18" fill="#FFFFFF"/>
+  <text x="146" y="410" fill="#18314A" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">模型需要自己补全</text>
+  <text x="146" y="452" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 用哪种搜索方案</text>
+  <text x="146" y="484" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 是否接受外部服务依赖</text>
+  <text x="146" y="516" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 移动端如何交互</text>
+  <text x="146" y="548" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 无结果和排序策略</text>
+  <text x="146" y="580" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 构建与索引生成的约束</text>
+
+  <rect x="644" y="188" width="474" height="500" rx="24" fill="#EAF3E6" stroke="#D1E0C8" stroke-width="2"/>
+  <text x="678" y="236" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">SDD spec</text>
+  <text x="678" y="284" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Goal / Constraints /</text>
+  <text x="678" y="316" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Acceptance / Tasks</text>
+
+  <rect x="678" y="364" width="406" height="262" rx="18" fill="#FFFFFF"/>
+  <text x="708" y="410" fill="#18314A" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">模型明确知道</text>
+  <text x="708" y="452" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 必须是静态可部署方案</text>
+  <text x="708" y="484" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 要兼容现有构建链路</text>
+  <text x="708" y="516" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 中文正文必须可检索</text>
+  <text x="708" y="548" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 移动端和无结果状态要验证</text>
+  <text x="708" y="580" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">• 任务拆分与回归顺序已给出</text>
+
+  <rect x="314" y="702" width="572" height="46" rx="14" fill="#17324D"/>
+  <text x="352" y="731" fill="#F5F7FA" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">区别不在篇幅长短，而在于是否把歧义提前消灭。</text>
+</svg>

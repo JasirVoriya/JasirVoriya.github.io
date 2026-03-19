@@ -1,0 +1,44 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="32" fill="#F3F1EB"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Vibe coding 的典型循环</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">重点不是逐行实现，而是不断用自然语言修正方向。</text>
+
+  <circle cx="600" cy="390" r="234" fill="#FFF7E7" stroke="#E0D0AE" stroke-width="3"/>
+
+  <rect x="486" y="144" width="228" height="88" rx="22" fill="#17324D"/>
+  <text x="543" y="197" fill="#F5F7FA" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">想法</text>
+
+  <rect x="820" y="274" width="232" height="88" rx="22" fill="#E5EEF8"/>
+  <text x="868" y="327" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Prompt</text>
+
+  <rect x="816" y="482" width="236" height="88" rx="22" fill="#E8F3DD"/>
+  <text x="860" y="535" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">生成代码</text>
+
+  <rect x="486" y="576" width="228" height="88" rx="22" fill="#FCE8D7"/>
+  <text x="543" y="629" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">运行</text>
+
+  <rect x="148" y="482" width="246" height="88" rx="22" fill="#F1E6FA"/>
+  <text x="208" y="535" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">修补 / 重试</text>
+
+  <rect x="158" y="274" width="228" height="88" rx="22" fill="#FFF4CC"/>
+  <text x="220" y="327" fill="#17324D" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">继续描述</text>
+
+  <path d="M714 188C785 204 839 235 881 281" stroke="#C7995A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M949 363C969 404 972 451 954 491" stroke="#92B089" stroke-width="5" stroke-linecap="round"/>
+  <path d="M818 570C780 609 726 637 676 648" stroke="#D49767" stroke-width="5" stroke-linecap="round"/>
+  <path d="M486 648C433 637 372 609 330 569" stroke="#A487C3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M192 489C171 448 172 401 190 361" stroke="#D0B24E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M350 279C393 236 445 207 486 193" stroke="#C7995A" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M887 284L875 278L886 270L887 284Z" fill="#C7995A"/>
+  <path d="M960 492L949 483L962 481L960 492Z" fill="#92B089"/>
+  <path d="M677 652L684 640L690 651L677 652Z" fill="#D49767"/>
+  <path d="M330 574L341 573L337 586L330 574Z" fill="#A487C3"/>
+  <path d="M184 363L197 366L187 375L184 363Z" fill="#D0B24E"/>
+  <path d="M484 189L493 201L478 202L484 189Z" fill="#C7995A"/>
+
+  <rect x="858" y="80" width="264" height="104" rx="18" fill="#FFFFFF" stroke="#E2D7C6" stroke-width="2"/>
+  <text x="886" y="118" fill="#17324D" font-size="18" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">这个循环的长处</text>
+  <text x="886" y="148" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">探索快、反馈快、</text>
+  <text x="886" y="172" fill="#536273" font-size="16" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">非常适合未知空间试错。</text>
+</svg>

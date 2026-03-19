@@ -1,0 +1,32 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="32" fill="#F4F5EF"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">例子：文章发布工作流为什么更适合用 SDD</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">工作流不是一段代码，而是一组状态、规则和失败路径。</text>
+
+  <rect x="112" y="224" width="226" height="120" rx="24" fill="#FFF0E3"/>
+  <text x="178" y="274" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">draft</text>
+  <text x="146" y="314" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">只允许校验和预览</text>
+
+  <rect x="484" y="224" width="226" height="120" rx="24" fill="#FFF6D8"/>
+  <text x="544" y="274" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">review</text>
+  <text x="510" y="314" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">通过 frontmatter 校验</text>
+
+  <rect x="856" y="224" width="226" height="120" rx="24" fill="#E6F3E7"/>
+  <text x="904" y="274" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">published</text>
+  <text x="904" y="314" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">仅成功构建后进入</text>
+
+  <path d="M338 284H484" stroke="#C99965" stroke-width="4" stroke-linecap="round"/>
+  <path d="M710 284H856" stroke="#93B28A" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M474 284L462 276V292L474 284Z" fill="#C99965"/>
+  <path d="M846 284L834 276V292L846 284Z" fill="#93B28A"/>
+
+  <rect x="140" y="436" width="920" height="230" rx="24" fill="#FFFFFF" stroke="#DDE2D7" stroke-width="2"/>
+  <text x="184" y="490" fill="#18314A" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">SDD 在这里补上的不是“代码”，而是规则</text>
+  <text x="184" y="540" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">1. 哪些字段必填</text>
+  <text x="184" y="576" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">2. 哪些状态禁止发布</text>
+  <text x="184" y="612" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">3. 构建失败时在哪里中断</text>
+  <text x="620" y="540" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">4. 哪些行为在本地发生</text>
+  <text x="620" y="576" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">5. 哪些行为只在 CI 发生</text>
+  <text x="620" y="612" fill="#536273" font-size="20" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">6. 失败时如何定位和复现</text>
+</svg>

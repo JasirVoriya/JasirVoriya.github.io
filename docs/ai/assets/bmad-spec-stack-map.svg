@@ -1,0 +1,32 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="32" fill="#F5F1EB"/>
+  <text x="72" y="88" fill="#18314A" font-size="34" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">BMad 与 SDD 的关系可以这样理解</text>
+  <text x="72" y="124" fill="#536273" font-size="18" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">不是同一套术语，但都在把模糊任务改写成可执行系统。</text>
+
+  <rect x="92" y="186" width="446" height="504" rx="24" fill="#FFF7E8" stroke="#E8DCC8" stroke-width="2"/>
+  <text x="126" y="236" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">SDD 层次</text>
+  <rect x="126" y="280" width="378" height="74" rx="18" fill="#17324D"/>
+  <text x="156" y="326" fill="#F5F7FA" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Project rules / constitution</text>
+  <rect x="126" y="376" width="378" height="74" rx="18" fill="#FFF2CC"/>
+  <text x="156" y="422" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Requirements / analysis</text>
+  <rect x="126" y="472" width="378" height="74" rx="18" fill="#EAF3DF"/>
+  <text x="156" y="518" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Design / architecture / plan</text>
+  <rect x="126" y="568" width="378" height="74" rx="18" fill="#E6ECFA"/>
+  <text x="156" y="614" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">Tasks / implementation / review</text>
+
+  <rect x="662" y="186" width="446" height="504" rx="24" fill="#ECF2FA" stroke="#D0DBE9" stroke-width="2"/>
+  <text x="696" y="236" fill="#18314A" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">BMad 产物</text>
+  <rect x="696" y="280" width="378" height="74" rx="18" fill="#17324D"/>
+  <text x="726" y="326" fill="#F5F7FA" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">project-context.md</text>
+  <rect x="696" y="376" width="378" height="74" rx="18" fill="#FFF2CC"/>
+  <text x="726" y="422" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">analysis / PRD</text>
+  <rect x="696" y="472" width="378" height="74" rx="18" fill="#EAF3DF"/>
+  <text x="726" y="518" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">solutioning / architecture / tech-spec</text>
+  <rect x="696" y="568" width="378" height="74" rx="18" fill="#E6ECFA"/>
+  <text x="726" y="614" fill="#17324D" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">story / tasks / review / testing</text>
+
+  <path d="M538 317H696" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M538 413H696" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M538 509H696" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M538 605H696" stroke="#C7A24A" stroke-width="4" stroke-linecap="round"/>
+</svg>
