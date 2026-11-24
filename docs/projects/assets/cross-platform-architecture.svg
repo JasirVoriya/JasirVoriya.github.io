@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 850" width="1360" height="850" role="img" aria-labelledby="cp-title cp-desc">
+  <title id="cp-title">妙投（MiaoCast）跨端三层架构（Android / iOS 各自实现 L2/L3 + 共享 Rust L1 核心）</title>
+  <desc id="cp-desc">展示 L3 UI 表现层（Android 原生与未来 iOS SwiftUI 各自实现，共用 design/ 设计规范）、L2 系统接口层（各自实现音频捕获、AAC 编码与保活）、FFI 跨语言薄插头层（Android JNI 与未来 iOS C ABI/UniFFI）以及 L1 公共核心层（Rust miaocast-core 全平台共享）。</desc>
+
+  <defs>
+    <linearGradient id="bg-canvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+    <linearGradient id="band-surface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111a2e" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0b1222" stop-opacity="0.93"/>
+    </linearGradient>
+    <linearGradient id="card-android" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#13253a"/>
+      <stop offset="100%" stop-color="#0e1a2b"/>
+    </linearGradient>
+    <linearGradient id="card-ios" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#17203c"/>
+      <stop offset="100%" stop-color="#10172b"/>
+    </linearGradient>
+    <linearGradient id="card-rust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1d30"/>
+      <stop offset="100%" stop-color="#111524"/>
+    </linearGradient>
+    <linearGradient id="sub-tile" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#17233b" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="ffi-surface" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f2338"/>
+      <stop offset="50%" stop-color="#1c183a"/>
+      <stop offset="100%" stop-color="#13203d"/>
+    </linearGradient>
+    <linearGradient id="ffi-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <radialGradient id="glow-android" cx="30%" cy="28%" r="36%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-ios" cx="76%" cy="28%" r="36%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-rust" cx="55%" cy="82%" r="44%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" opacity="0.34"/>
+    </pattern>
+
+    <filter id="orb-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="card-shadow" x="-6%" y="-10%" width="112%" height="126%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#020617" flood-opacity="0.44"/>
+    </filter>
+
+    <marker id="arr-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#34d399"/>
+    </marker>
+    <marker id="arr-sky" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arr-violet" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#c084fc"/>
+    </marker>
+    <marker id="arr-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#fb923c"/>
+    </marker>
+
+    <!-- Connector Paths -->
+    <path id="p-and-l3-l2" d="M 433 244 L 433 310"/>
+    <path id="p-ios-l3-l2" d="M 1077 244 L 1077 310"/>
+    <path id="p-and-l2-ffi" d="M 433 454 L 433 510"/>
+    <path id="p-ios-l2-ffi" d="M 1077 454 L 1077 510"/>
+    <path id="p-ffi-and-l1" d="M 433 564 L 433 590 L 660 590 L 660 620"/>
+    <path id="p-ffi-ios-l1" d="M 1077 564 L 1077 590 L 850 590 L 850 620"/>
+
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif; }
+      .mono { font-family: "SF Mono", ui-monospace, "Cascadia Code", Menlo, Consolas, monospace; }
+      .title { font-size: 21px; font-weight: 700; fill: #f8fafc; letter-spacing: 0.2px; }
+      .subtitle { font-size: 12.5px; fill: #94a3b8; }
+      .rail-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.6px; }
+      .rail-title { font-size: 14px; font-weight: 700; fill: #e2e8f0; }
+      .rail-sub { font-size: 11px; fill: #94a3b8; }
+      .card-hd { font-size: 14.5px; font-weight: 700; fill: #f8fafc; }
+      .tile-hd { font-size: 12px; font-weight: 700; fill: #f1f5f9; }
+      .tile-sub { font-size: 10.5px; fill: #94a3b8; }
+      .badge-txt { font-size: 10.5px; font-weight: 600; }
+      .wire-lbl { font-size: 10.5px; font-weight: 600; }
+      .flow-dash { stroke-dasharray: 7 6; animation: dash-flow 2.4s linear infinite; }
+      .flow-dash-slow { stroke-dasharray: 5 5; animation: dash-flow 3.2s linear infinite; }
+      @keyframes dash-flow { from { stroke-dashoffset: 26; } to { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1360" height="850" rx="18" fill="url(#bg-canvas)"/>
+  <rect width="1360" height="850" rx="18" fill="url(#dot-grid)"/>
+  <rect width="1360" height="850" rx="18" fill="url(#glow-android)"/>
+  <rect width="1360" height="850" rx="18" fill="url(#glow-ios)"/>
+  <rect width="1360" height="850" rx="18" fill="url(#glow-rust)"/>
+
+  <!-- Header -->
+  <text x="36" y="39" class="sans title">跨端三层架构：Android / iOS 各自实现 L2 &amp; L3 · 全平台共享 Rust L1</text>
+  <text x="36" y="64" class="sans subtitle">同一份 Rust 协议与同步引擎分别编译为 Android .so 与 iOS .xcframework，双端各自原生实现系统音频接口与明暗 UI</text>
+
+  <!-- Top Right Legend Pills -->
+  <g transform="translate(886, 22)">
+    <rect x="0" y="0" width="134" height="28" rx="14" fill="#0d2622" stroke="#34d399" stroke-opacity="0.55" stroke-width="1"/>
+    <circle cx="15" cy="14" r="4" fill="#34d399"/>
+    <text x="26" y="18" class="sans badge-txt" fill="#a7f3d0">Android · 已实现</text>
+
+    <rect x="146" y="0" width="124" height="28" rx="14" fill="#0f2136" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="4 3"/>
+    <circle cx="161" cy="14" r="4" fill="#38bdf8"/>
+    <text x="172" y="18" class="sans badge-txt" fill="#bae6fd">iOS · 后续规划</text>
+
+    <rect x="282" y="0" width="156" height="28" rx="14" fill="#2a1912" stroke="#fb923c" stroke-opacity="0.65" stroke-width="1"/>
+    <circle cx="297" cy="14" r="4" fill="#fb923c"/>
+    <text x="308" y="18" class="sans badge-txt" fill="#fed7aa">Rust core · 公共共享</text>
+  </g>
+
+  <!-- ==================== BAND L3: UI LAYER ==================== -->
+  <rect x="24" y="92" width="1312" height="164" rx="16" fill="url(#band-surface)" stroke="#1e293b" stroke-width="1"/>
+  <!-- Left Rail L3 -->
+  <g transform="translate(40, 128)">
+    <rect x="0" y="0" width="82" height="22" rx="11" fill="#1e1b4b" stroke="#818cf8" stroke-opacity="0.55"/>
+    <text x="41" y="15" text-anchor="middle" class="mono rail-tag" fill="#c7d2fe">LAYER 3</text>
+    <text x="0" y="46" class="sans rail-title">UI 表现层</text>
+    <text x="0" y="66" class="sans rail-sub">双端各自原生实现</text>
+    <text x="0" y="84" class="sans rail-sub">共用同一套设计规范</text>
+  </g>
+
+  <!-- Android L3 Card -->
+  <g filter="url(#card-shadow)">
+    <rect x="198" y="106" width="470" height="138" rx="14" fill="url(#card-android)" stroke="#34d399" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="216" y="132" class="sans card-hd">Android 原生 UI（Kotlin）</text>
+    <rect x="524" y="116" width="128" height="22" rx="11" fill="#064e3b" stroke="#34d399" stroke-opacity="0.5"/>
+    <text x="588" y="131" text-anchor="middle" class="sans badge-txt" fill="#a7f3d0">已实现 · #6 已统一</text>
+
+    <rect x="214" y="148" width="140" height="80" rx="10" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="226" y="170" class="mono tile-hd">MainActivity</text>
+    <text x="226" y="190" class="sans tile-sub">投送主面板与播控</text>
+    <text x="226" y="208" class="sans tile-sub">设备路由与原位延迟</text>
+
+    <rect x="364" y="148" width="140" height="80" rx="10" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="376" y="170" class="mono tile-hd">AppPicker</text>
+    <text x="376" y="190" class="sans tile-sub">单 App 音源选择</text>
+    <text x="376" y="208" class="sans tile-sub">推荐音乐与快捷切换</text>
+
+    <rect x="514" y="148" width="138" height="80" rx="10" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="526" y="170" class="mono tile-hd">Settings</text>
+    <text x="526" y="190" class="sans tile-sub">深浅色 / 跟随系统</text>
+    <text x="526" y="208" class="sans tile-sub">权限状态与高级参数</text>
+  </g>
+
+  <!-- Shared Design Blueprint Bridge (Center of L3) -->
+  <g>
+    <rect x="686" y="114" width="138" height="122" rx="12" fill="#1b1433" stroke="#a855f7" stroke-opacity="0.7" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <text x="755" y="136" text-anchor="middle" class="sans tile-hd" fill="#e9d5ff">共享设计规范</text>
+    <text x="755" y="153" text-anchor="middle" class="mono tile-sub" fill="#c084fc">design/</text>
+    <line x1="702" y1="163" x2="808" y2="163" stroke="#a855f7" stroke-opacity="0.28"/>
+    <text x="755" y="182" text-anchor="middle" class="mono tile-sub" fill="#ddd6fe">tokens.json</text>
+    <text x="755" y="200" text-anchor="middle" class="mono tile-sub" fill="#ddd6fe">icons/*.svg</text>
+    <text x="755" y="218" text-anchor="middle" class="mono tile-sub" fill="#ddd6fe">UI_SPEC.md</text>
+    <!-- Horizontal dashed links to both UIs -->
+    <line x1="686" y1="175" x2="670" y2="175" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arr-violet)"/>
+    <line x1="824" y1="175" x2="840" y2="175" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arr-violet)"/>
+  </g>
+
+  <!-- iOS L3 Card -->
+  <g filter="url(#card-shadow)">
+    <rect x="842" y="106" width="470" height="138" rx="14" fill="url(#card-ios)" stroke="#38bdf8" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="6 4"/>
+    <text x="860" y="132" class="sans card-hd">iOS 原生 UI（SwiftUI）</text>
+    <rect x="1202" y="116" width="94" height="22" rx="11" fill="#0c2d48" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <text x="1249" y="131" text-anchor="middle" class="sans badge-txt" fill="#bae6fd">后续规划</text>
+
+    <rect x="858" y="148" width="140" height="80" rx="10" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="870" y="170" class="mono tile-hd">CastMainView</text>
+    <text x="870" y="190" class="sans tile-sub">同款主面板与明暗色</text>
+    <text x="870" y="208" class="sans tile-sub">多音箱音量与延迟</text>
+
+    <rect x="1008" y="148" width="140" height="80" rx="10" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="1020" y="170" class="mono tile-hd">SourceSlot</text>
+    <text x="1020" y="190" class="sans tile-sub">ReplayKit 广播入口</text>
+    <text x="1020" y="208" class="sans tile-sub">平台差异化音源槽位</text>
+
+    <rect x="1158" y="148" width="138" height="80" rx="10" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="1170" y="170" class="mono tile-hd">SettingsView</text>
+    <text x="1170" y="190" class="sans tile-sub">深浅色 / 跟随系统</text>
+    <text x="1170" y="208" class="sans tile-sub">发现选项与连接参数</text>
+  </g>
+
+  <!-- ==================== GAP L3 -> L2 ==================== -->
+  <use href="#p-and-l3-l2" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arr-emerald)"/>
+  <use href="#p-ios-l3-l2" fill="none" stroke="#38bdf8" stroke-width="2" class="flow-dash-slow" marker-end="url(#arr-sky)"/>
+
+  <rect x="352" y="264" width="162" height="22" rx="11" fill="#0b1d1c" stroke="#34d399" stroke-opacity="0.45"/>
+  <text x="433" y="279" text-anchor="middle" class="sans wire-lbl" fill="#a7f3d0">Intent 指令 ⇄ 状态刷新</text>
+
+  <rect x="988" y="264" width="178" height="22" rx="11" fill="#0b1b2b" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <text x="1077" y="279" text-anchor="middle" class="sans wire-lbl" fill="#bae6fd">ViewModel ⇄ App Group</text>
+
+  <!-- ==================== BAND L2: PLATFORM SYSTEM LAYER ==================== -->
+  <rect x="24" y="298" width="1312" height="168" rx="16" fill="url(#band-surface)" stroke="#1e293b" stroke-width="1"/>
+  <!-- Left Rail L2 -->
+  <g transform="translate(40, 336)">
+    <rect x="0" y="0" width="82" height="22" rx="11" fill="#0f293a" stroke="#38bdf8" stroke-opacity="0.55"/>
+    <text x="41" y="15" text-anchor="middle" class="mono rail-tag" fill="#bae6fd">LAYER 2</text>
+    <text x="0" y="46" class="sans rail-title">系统接口层</text>
+    <text x="0" y="66" class="sans rail-sub">强依赖操作系统 API</text>
+    <text x="0" y="84" class="sans rail-sub">捕获音频 → 编码 AAC</text>
+  </g>
+
+  <!-- Android L2 Card -->
+  <g filter="url(#card-shadow)">
+    <rect x="198" y="310" width="470" height="144" rx="14" fill="url(#card-android)" stroke="#34d399" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="216" y="334" class="sans card-hd">Android 系统与捕获层（Kotlin · API 29–36）</text>
+
+    <rect x="214" y="346" width="214" height="46" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="226" y="365" class="mono tile-hd">AudioPlaybackCapture</text>
+    <text x="226" y="382" class="sans tile-sub">严格单 UID 捕获 · MediaProjection</text>
+
+    <rect x="438" y="346" width="214" height="46" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="450" y="365" class="mono tile-hd">AacEncoder</text>
+    <text x="450" y="382" class="sans tile-sub">MediaCodec 48kHz 256kbps 裸 AU</text>
+
+    <rect x="214" y="400" width="214" height="44" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="226" y="419" class="mono tile-hd">CastService + LocalMute</text>
+    <text x="226" y="435" class="sans tile-sub">前台服务保活 · 本机静音能量探针</text>
+
+    <rect x="438" y="400" width="214" height="44" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="450" y="419" class="mono tile-hd">NowPlayingTracker</text>
+    <text x="450" y="435" class="sans tile-sub">NotificationListener 读曲目与播控</text>
+  </g>
+
+  <!-- Center OS Boundary Note in L2 -->
+  <g>
+    <rect x="686" y="342" width="138" height="80" rx="12" fill="#0f172a" stroke="#475569" stroke-dasharray="4 3"/>
+    <text x="755" y="365" text-anchor="middle" class="sans tile-hd" fill="#cbd5e1">OS 能力隔离</text>
+    <text x="755" y="386" text-anchor="middle" class="sans tile-sub">双端各自抓音编码</text>
+    <text x="755" y="404" text-anchor="middle" class="mono tile-sub" fill="#22d3ee">统一产出 AAC AU</text>
+  </g>
+
+  <!-- iOS L2 Card -->
+  <g filter="url(#card-shadow)">
+    <rect x="842" y="310" width="470" height="144" rx="14" fill="url(#card-ios)" stroke="#38bdf8" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="6 4"/>
+    <text x="860" y="334" class="sans card-hd">iOS 系统与捕获层（Swift · 规划）</text>
+
+    <rect x="858" y="346" width="214" height="46" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="870" y="365" class="mono tile-hd">ReplayKit Extension</text>
+    <text x="870" y="382" class="sans tile-sub">RPBroadcastUpload 系统音频捕获</text>
+
+    <rect x="1082" y="346" width="214" height="46" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="1094" y="365" class="mono tile-hd">AudioToolbox AAC</text>
+    <text x="1094" y="382" class="sans tile-sub">硬件编码 48kHz 256kbps 裸 AU</text>
+
+    <rect x="858" y="400" width="214" height="44" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="870" y="419" class="mono tile-hd">AVAudioSession</text>
+    <text x="870" y="435" class="sans tile-sub">会话管理与扩展 50MB 内存约束</text>
+
+    <rect x="1082" y="400" width="214" height="44" rx="9" fill="url(#sub-tile)" stroke="#334155"/>
+    <text x="1094" y="419" class="mono tile-hd">NowPlaying / 锁屏</text>
+    <text x="1094" y="435" class="sans tile-sub">MPNowPlaying · Live Activity</text>
+  </g>
+
+  <!-- ==================== GAP L2 -> FFI ==================== -->
+  <use href="#p-and-l2-ffi" fill="none" stroke="#34d399" stroke-width="2.2" marker-end="url(#arr-emerald)"/>
+  <use href="#p-ios-l2-ffi" fill="none" stroke="#38bdf8" stroke-width="2.2" class="flow-dash-slow" marker-end="url(#arr-sky)"/>
+  <circle r="3.5" fill="#34d399" filter="url(#orb-glow)">
+    <animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#p-and-l2-ffi"/></animateMotion>
+  </circle>
+  <circle r="3.5" fill="#38bdf8" filter="url(#orb-glow)">
+    <animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p-ios-l2-ffi"/></animateMotion>
+  </circle>
+
+  <!-- ==================== BAND FFI: BRIDGE BOUNDARY ==================== -->
+  <rect x="24" y="502" width="1312" height="72" rx="14" fill="url(#ffi-surface)" stroke="url(#ffi-border)" stroke-width="1.3"/>
+  <g transform="translate(40, 520)">
+    <text x="0" y="15" class="sans rail-title" fill="#e9d5ff">FFI 跨语言插头</text>
+    <text x="0" y="34" class="sans rail-sub">薄类型转发 · 无业务</text>
+  </g>
+
+  <!-- Android JNI Plug -->
+  <rect x="198" y="512" width="424" height="52" rx="10" fill="#0b1f2d" stroke="#34d399" stroke-opacity="0.55"/>
+  <text x="410" y="534" text-anchor="middle" class="mono tile-hd" fill="#a7f3d0">Android JNI（NativeBridge.kt ⇄ ffi.rs）</text>
+  <text x="410" y="553" text-anchor="middle" class="mono tile-sub">打包产物：libmiaocast_core.so (arm64-v8a · 16KB)</text>
+
+  <!-- Shared Contract Pill -->
+  <rect x="634" y="512" width="242" height="52" rx="10" fill="#1d1638" stroke="#c084fc" stroke-opacity="0.7"/>
+  <text x="755" y="533" text-anchor="middle" class="sans tile-hd" fill="#f3e8ff">统一 2 → 1 接口契约</text>
+  <text x="755" y="552" text-anchor="middle" class="mono tile-sub" fill="#d8b4fe">discover · connect · pushAac · stats</text>
+
+  <!-- iOS C ABI Plug -->
+  <rect x="888" y="512" width="424" height="52" rx="10" fill="#0d1e33" stroke="#38bdf8" stroke-opacity="0.55"/>
+  <text x="1100" y="534" text-anchor="middle" class="mono tile-hd" fill="#bae6fd">iOS C ABI（miaocast_core.h ⇄ ffi_c.rs）</text>
+  <text x="1100" y="553" text-anchor="middle" class="mono tile-sub">打包产物：MiaoCastCore.xcframework (staticlib · #7 已就绪)</text>
+
+  <!-- ==================== GAP FFI -> L1 (CONVERGING) ==================== -->
+  <use href="#p-ffi-and-l1" fill="none" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arr-orange)"/>
+  <use href="#p-ffi-ios-l1" fill="none" stroke="#fb923c" stroke-width="2.2" class="flow-dash" marker-end="url(#arr-orange)"/>
+  <circle r="3.8" fill="#fb923c" filter="url(#orb-glow)">
+    <animateMotion dur="2.1s" repeatCount="indefinite"><mpath href="#p-ffi-and-l1"/></animateMotion>
+  </circle>
+  <circle r="3.8" fill="#fdba74" filter="url(#orb-glow)">
+    <animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#p-ffi-ios-l1"/></animateMotion>
+  </circle>
+
+  <!-- ==================== BAND L1: SHARED RUST CORE ==================== -->
+  <rect x="24" y="610" width="1312" height="214" rx="16" fill="url(#band-surface)" stroke="#f97316" stroke-opacity="0.42" stroke-width="1.2"/>
+  <!-- Left Rail L1 -->
+  <g transform="translate(40, 668)">
+    <rect x="0" y="0" width="82" height="22" rx="11" fill="#3a1c10" stroke="#fb923c" stroke-opacity="0.65"/>
+    <text x="41" y="15" text-anchor="middle" class="mono rail-tag" fill="#fed7aa">LAYER 1</text>
+    <text x="0" y="46" class="sans rail-title">公共核心层</text>
+    <text x="0" y="66" class="sans rail-sub">纯 Rust · 零平台依赖</text>
+    <text x="0" y="84" class="sans rail-sub">全平台 100% 共享</text>
+  </g>
+
+  <!-- Outer Rust Core Container -->
+  <g filter="url(#card-shadow)">
+    <rect x="198" y="620" width="1114" height="192" rx="14" fill="url(#card-rust)" stroke="#fb923c" stroke-opacity="0.52" stroke-width="1.2"/>
+    <text x="216" y="645" class="sans card-hd">miaocast-core（Rust · core/）</text>
+    <text x="514" y="645" class="mono tile-sub" fill="#fdba74">crate-type = ["rlib", "cdylib", "staticlib"]  ·  同时驱动桌面 cli/</text>
+
+    <!-- Shared State / Consolidation Strip (#7) -->
+    <rect x="214" y="658" width="1082" height="50" rx="10" fill="#231a2b" stroke="#fbbf24" stroke-opacity="0.55" stroke-dasharray="5 3"/>
+    <rect x="226" y="672" width="128" height="22" rx="11" fill="#422006" stroke="#fbbf24" stroke-opacity="0.6"/>
+    <text x="290" y="687" text-anchor="middle" class="sans badge-txt" fill="#fde68a">公共状态门面 · #7 下沉</text>
+    <text x="368" y="687" class="sans tile-sub" fill="#fef3c7">Engine 句柄门面（与 JNI 解耦） · 多箱并发 Reconcile 与音量排队 · 发现过滤与缓存合并 · 路由互斥状态机 · UI 归一化延迟</text>
+
+    <!-- 4 Core Protocol Cards -->
+    <rect x="214" y="720" width="260" height="80" rx="10" fill="url(#sub-tile)" stroke="#475569"/>
+    <text x="228" y="742" class="sans tile-hd" fill="#fed7aa">1. mDNS 发现与频段策略</text>
+    <text x="228" y="762" class="mono tile-sub">discovery.rs · netinfo.rs</text>
+    <text x="228" y="782" class="sans tile-sub">_mi-connect 优先 · 5GHz 缓冲延迟</text>
+
+    <rect x="486" y="720" width="260" height="80" rx="10" fill="url(#sub-tile)" stroke="#475569"/>
+    <text x="500" y="742" class="sans tile-hd" fill="#fed7aa">2. 控制通道与双认证隔离</text>
+    <text x="500" y="762" class="mono tile-sub">control.rs · auth/legacy &amp; safety</text>
+    <text x="500" y="782" class="sans tile-sub">TCP 8899 · Legacy / Safety AES-CBC</text>
+
+    <rect x="758" y="720" width="260" height="80" rx="10" fill="url(#sub-tile)" stroke="#475569"/>
+    <text x="772" y="742" class="sans tile-hd" fill="#fed7aa">3. WFD RTSP 与时钟同步</text>
+    <text x="772" y="762" class="mono tile-sub">rtsp.rs · clock_sync.rs · timeline.rs</text>
+    <text x="772" y="782" class="sans tile-sub">UDP TimerServer · 共享 PTS/PCR</text>
+
+    <rect x="1030" y="720" width="266" height="80" rx="10" fill="url(#sub-tile)" stroke="#475569"/>
+    <text x="1044" y="742" class="sans tile-hd" fill="#fed7aa">4. 多箱会话与流媒体封装</text>
+    <text x="1044" y="762" class="mono tile-sub">session.rs · media/* · latency.rs</text>
+    <text x="1044" y="782" class="sans tile-sub">ADTS→MPEG-TS→RTP · 最多 63 台重连</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="680" y="841" text-anchor="middle" class="sans tile-sub">打包形态：Android APK = android/ (L2+L3) + libmiaocast_core.so (L1)    ｜    未来 iOS IPA = ios/ (L2+L3) + MiaoCastCore.xcframework (同一份 L1)</text>
+</svg>
